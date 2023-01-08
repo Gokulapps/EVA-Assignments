@@ -6,7 +6,7 @@ Method for Combining Both the Inputs - For the First Model I Combined the Random
 
 Loss Function - I have used Cross Entropy for both the Models that i trained. I prefered this Loss Function over the other Function for its Simplicity. I was able to easily Evaluate the accuracy of the Model with this Function. As the Values is between 0 - 1, it was easier to Evaluate my Model.
 
-Method of Evaluation - I created a Function to Evaluate the Model which will Use Test Dataset to Evaluate the Model. The Function takes Model and the Test Dataset on which the Model needs to be tested as input and returns accuracy based on Nuber of Correct Predictions in Test Dataset. For the two Models I used, I got Accuracy of 0.975% for the First Model and 7.34% for the Second Model. From this results we can Infer that Model in which we replaced the Last Ten Digits of the Input Image with Random Number fared Better than the other Model which Combined them at Fully Connected Layer.    
+Method of Evaluation - I created a Function to Evaluate the Model which will Use Test Dataset to Evaluate the Model. The Function takes Model and the Test Dataset on which the Model needs to be tested as input and returns accuracy based on Nuber of Correct Predictions in Test Dataset. For the two Models I used, I got Accuracy of 0.975% for the First Model and 7.34% for the Second Model. From this results we can Infer that Model in which we replaced the Last Ten Digits of the Input Image with Random Number fared comparatively better than the other Model which Combined them at Fully Connected Layer. Still the Accuracy for both the Models are too Low.   
 
 **Please Find the Training Logs for Network 1 below **
 
