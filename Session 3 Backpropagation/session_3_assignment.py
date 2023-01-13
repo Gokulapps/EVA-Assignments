@@ -17,24 +17,25 @@ from torchvision import datasets, transforms
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.conv1 = nn.Conv2d(in_channels = 1, out_channels = 8, kernel_size = 5) #input -? OUtput? RF   24*24*8
+        self.conv1 = nn.Conv2d(in_channels = 1, out_channels = 8, kernel_size = 5) #input = 28*28*1, output = 24*24*8
         self.bn1 = nn.BatchNorm2d(8)
-        self.conv2 = nn.Conv2d(in_channels = 8, out_channels = 16, kernel_size = 5) # 20*20*16 -> maxpool -> 10*10*16
+        self.conv2 = nn.Conv2d(in_channels = 8, out_channels = 16, kernel_size = 5) # input = 24*24*8, output = 20*20*16 
         self.bn2 = nn.BatchNorm2d(16) 
-        self.conv3 = nn.Conv2d(in_channels = 16, out_channels = 32, kernel_size = 5) # 6*6*64
+        # -> maxpool -> 10*10*16
+        self.conv3 = nn.Conv2d(in_channels = 16, out_channels = 32, kernel_size = 5) # input = 10*10*16, output = 6*6*32
         self.bn3 = nn.BatchNorm2d(32)
-        self.dropout1 = nn.Dropout2d(0.2)
-        self.conv4 = nn.Conv2d(in_channels = 32, out_channels = 24, kernel_size = 1, stride = 1) # 6*6*24
-        self.gap = nn.AvgPool2d(kernel_size = 6)
-        self.fc_output = nn.Linear(in_features =24, out_features = 10)
+        self.dropout1 = nn.Dropout2d(0.1)
+        self.conv4 = nn.Conv2d(in_channels = 32, out_channels = 24, kernel_size = 1, stride = 1) # input = 6*6*32, output = 6*6*24
+        self.gap = nn.AvgPool2d(kernel_size = 6) # kernel_size = 6*6 to get class specific feature
+        self.fc_output = nn.Linear(in_features = 24, out_features = 10) # input = 24, output = 10
       
     def forward(self, tensor):
         x = tensor 
-        x = self.bn1(self.conv1(x))
-        x = self.bn2(self.conv2(x))
+        x = self.bn1(F.relu(self.conv1(x)))
+        x = self.bn2(F.relu(self.conv2(x)))
         x = F.max_pool2d(x, kernel_size = 2, stride = 2) 
-        x = self.dropout1(self.bn3(self.conv3(x)))
-        x = self.conv4(x)
+        x = self.dropout1(self.bn3(F.relu(self.conv3(x))))
+        x = F.relu(self.conv4(x))
         x = self.gap(x)
         x = x.reshape(x.shape[0], -1)
         x = self.fc_output(x)
@@ -100,6 +101,6 @@ def test(model, device, test_loader):
 model = Net().to(device)
 optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
 
-for epoch in range(1, 11):
+for epoch in range(1, 16):
     train(model, device, train_loader, optimizer, epoch)
     test(model, device, test_loader)
