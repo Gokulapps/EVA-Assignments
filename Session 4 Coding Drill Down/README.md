@@ -38,4 +38,4 @@ Best Train Accuracy - 98.97 %
 Best Test Accuracy - 98.33 %
 
 Analysis :- 
-It is a Good Model which shows signs of Improvement in terms of Accuracy as we are reaching more epochs as well as we have ovrcome overfitting issus but the model is not good enough to achieve the desired accuracy within 15 Epochs. There is scope for further Improvement.
+It is a Good Model which shows signs of Improvement in terms of Accuracy as we are reaching more epochs as well as overfitting issue is not there but the model is not good enough to achieve the desired accuracy within 15 Epochs. There is scope for further Improvement.
