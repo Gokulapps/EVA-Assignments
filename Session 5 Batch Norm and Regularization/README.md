@@ -24,11 +24,11 @@ is Layer Normalization applied to the Input Data in Groups.
 I have named the Three Models that i have trained as Model 1, Model 2 and Model 3. For Model 1, I have used Layer Normalization and for Model 2, I have used
 Group Normalization and Batch Normalization along with L1 Regularization has been used for Model 3. From the Results, I have Inferred that Batch Normalization fared better than the other two models followed by Group Normalization and Layer Normalization. For Computer Vision Application, Batch Normalization seems to suit better as we are Normalizing across channels, Similar Features are getting Normalized together. For Natural Language Processing Application, Layer Normalization fares better as sequence of Input Data matters in NLP Application. Hence we need to Normalize all the Channels together for the Input Data. 
 
-                                                   Graph I - Validation Loss for all three Models together
+                                             Graph I - Validation Loss for all three Models together
 
 ![image](https://user-images.githubusercontent.com/61132761/215281122-640e0765-db84-48f1-8fa8-e418b35985d3.png)
 
-                                                  Graph II - Validation Accuracy of all Three Model together
+                                            Graph II - Validation Accuracy of all Three Model together
                                                   
 ![image](https://user-images.githubusercontent.com/61132761/215281757-43c9eb49-8c6c-4dc2-ab81-37f769fe8547.png)
 
