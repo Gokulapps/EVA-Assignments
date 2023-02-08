@@ -1,56 +1,7 @@
 In this Folder, I have Uploaded Three Python Files and one Notebook File. My Target was to take Cifar10 Dataset and desgin an Neural Network which will attain an 
 Validation Accuracy of 85% in as many epochs as possible. Initially I created a Model.py File in which i designed a Neural Network with 1,97,000 Parameters. I have attached the Architecture and Summmary of the Model is below, 
 
-----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
-            Conv2d-1            [-1, 8, 32, 32]             224
-       BatchNorm2d-2            [-1, 8, 32, 32]              16
-              ReLU-3            [-1, 8, 32, 32]               0
-            Conv2d-4           [-1, 16, 32, 32]           1,168
-       BatchNorm2d-5           [-1, 16, 32, 32]              32
-              ReLU-6           [-1, 16, 32, 32]               0
-            Conv2d-7           [-1, 32, 32, 32]           4,640
-       BatchNorm2d-8           [-1, 32, 32, 32]              64
-              ReLU-9           [-1, 32, 32, 32]               0
-           Conv2d-10           [-1, 64, 32, 32]          18,496
-      BatchNorm2d-11           [-1, 64, 32, 32]             128
-             ReLU-12           [-1, 64, 32, 32]               0
-        Dropout2d-13           [-1, 64, 32, 32]               0
-           Conv2d-14           [-1, 64, 28, 28]          36,928
-      BatchNorm2d-15           [-1, 64, 28, 28]             128
-             ReLU-16           [-1, 64, 28, 28]               0
-        Dropout2d-17           [-1, 64, 28, 28]               0
-           Conv2d-18           [-1, 64, 24, 24]           1,664
-           Conv2d-19            [-1, 8, 24, 24]             520
-      BatchNorm2d-20            [-1, 8, 24, 24]              16
-             ReLU-21            [-1, 8, 24, 24]               0
-           Conv2d-22           [-1, 16, 24, 24]           1,168
-      BatchNorm2d-23           [-1, 16, 24, 24]              32
-             ReLU-24           [-1, 16, 24, 24]               0
-           Conv2d-25           [-1, 24, 24, 24]           3,480
-      BatchNorm2d-26           [-1, 24, 24, 24]              48
-             ReLU-27           [-1, 24, 24, 24]               0
-           Conv2d-28           [-1, 32, 24, 24]           6,944
-      BatchNorm2d-29           [-1, 32, 24, 24]              64
-             ReLU-30           [-1, 32, 24, 24]               0
-           Conv2d-31           [-1, 64, 20, 20]          18,496
-      BatchNorm2d-32           [-1, 64, 20, 20]             128
-             ReLU-33           [-1, 64, 20, 20]               0
-        Dropout2d-34           [-1, 64, 20, 20]               0
-           Conv2d-35             [-1, 64, 9, 9]         102,464
-           Conv2d-36             [-1, 10, 9, 9]             650
-        AvgPool2d-37             [-1, 10, 1, 1]               0
-================================================================
-Total params: 197,498
-Trainable params: 197,498
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.01
-Forward/backward pass size (MB): 7.01
-Params size (MB): 0.75
-Estimated Total Size (MB): 7.77
-----------------------------------------------------------------
+![image](https://user-images.githubusercontent.com/61132761/217616302-c0fda28d-b878-41d0-8adc-3773a25e537d.png)
 
 As a Next Step I created a augmentation.py File where i Implemented Augmentation Strategies like Cutout, Horizontal Flip and Shift Scale Rotate using Albumentation 
 Library. This File takes Batch of Images as an Input and Returns Augmented Image. There is a seperate Python File for Training and Testing the Network on a given
