@@ -23,4 +23,5 @@ I have attached short clipped Training Logs below,
 
                             Ten Misclassified Images by the Network is shown below to Understand the shortcomings of the Model
 
-![image](https://user-images.githubusercontent.com/61132761/217615940-a0549575-a47a-40c2-bb2a-d06b3b928d58.png)
+![image](https://user-images.githubusercontent.com/61132761/217617038-91b778cd-12cc-49d3-a24b-f89b5bd2732b.png)
+
