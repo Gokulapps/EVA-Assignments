@@ -53,20 +53,20 @@ class Network(nn.Module):
                             nn.Conv2d(in_channels=64, out_channels=8, kernel_size=1), # Pointwise Convolution 
                             nn.BatchNorm2d(8),
                             nn.ReLU()
-        )                   # 28*28 --> 24*24 || RF = 15
+        )                   # 28*28 --> 24*24 || RF = 17
 
         # Convolution Block 3 
         self.convblock3 = nn.Sequential(
-                            nn.Conv2d(in_channels=8, out_channels=16, kernel_size=3, padding=1), # 24*24 --> 24*24 || RF = 17
+                            nn.Conv2d(in_channels=8, out_channels=16, kernel_size=3, padding=1), # 24*24 --> 24*24 || RF = 19
                             nn.BatchNorm2d(16),
                             nn.ReLU(),
-                            nn.Conv2d(in_channels=16, out_channels=24, kernel_size=3, padding=1), # 24*24 --> 24*24 || RF = 19
+                            nn.Conv2d(in_channels=16, out_channels=24, kernel_size=3, padding=1), # 24*24 --> 24*24 || RF = 21
                             nn.BatchNorm2d(24),
                             nn.ReLU(),
-                            nn.Conv2d(in_channels=24, out_channels=32, kernel_size=3, padding=1), # 24*24 --> 24*24 || RF = 21
+                            nn.Conv2d(in_channels=24, out_channels=32, kernel_size=3, padding=1), # 24*24 --> 24*24 || RF = 23
                             nn.BatchNorm2d(32),
                             nn.ReLU(),
-                            nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, dilation=2), # 24*24 --> 20*20 || RF = 25
+                            nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, dilation=2), # 24*24 --> 20*20 || RF = 27
                             nn.BatchNorm2d(64),
                             nn.ReLU(),
                             nn.Dropout2d(0.1)              
@@ -74,12 +74,12 @@ class Network(nn.Module):
 
         # Convolution Block 4
         self.convblock4 = nn.Sequential(
-                              nn.Conv2d(in_channels=64, out_channels=64, kernel_size=5, stride=2, padding=1), # 20*20 --> 9*9 || RF = 29
-                              nn.Conv2d(in_channels=64, out_channels=10, kernel_size=1) # 9*9*64 --> 9*9*10 || RF = 29
+                              nn.Conv2d(in_channels=64, out_channels=64, kernel_size=5, stride=2, padding=1), # 20*20 --> 9*9 || RF = 31
+                              nn.Conv2d(in_channels=64, out_channels=10, kernel_size=1) # 9*9*64 --> 9*9*10 || RF = 31
         )
 
         # Output Block 
-        self.output_gap = nn.AvgPool2d(9) # 9*9 --> 1*1 || RF = 45
+        self.output_gap = nn.AvgPool2d(9) # 9*9 --> 1*1 || RF = 47
          
     def forward(self, tensor):
         x = tensor
