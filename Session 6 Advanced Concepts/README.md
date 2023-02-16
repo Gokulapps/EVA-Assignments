@@ -23,7 +23,7 @@ I have attached short clipped Training Logs below,
 </p>
 
 
-                            Ten Misclassified Images by the Network is shown below to Understand the shortcomings of the Model
+                        Ten Misclassified Images by the Network is shown below to Understand the shortcomings of the Model
                             
 <p align="center">
 <img width="500" height="300" src="https://user-images.githubusercontent.com/61132761/217617038-91b778cd-12cc-49d3-a24b-f89b5bd2732b.png">    
