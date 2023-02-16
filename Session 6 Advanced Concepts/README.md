@@ -18,10 +18,13 @@ I have attached short clipped Training Logs below,
 
                                                  The Plot for Network's Accuracy and Loss
 
-![image](https://user-images.githubusercontent.com/61132761/217616902-c56402fb-3d1c-4623-93e6-8d4d43ef12fe.png)
+<p align="center">
+<img width="500" height="300" src="https://user-images.githubusercontent.com/61132761/217616902-c56402fb-3d1c-4623-93e6-8d4d43ef12fe.png">    
+</p>
 
 
                             Ten Misclassified Images by the Network is shown below to Understand the shortcomings of the Model
-
-![image](https://user-images.githubusercontent.com/61132761/217617038-91b778cd-12cc-49d3-a24b-f89b5bd2732b.png)
-
+                            
+<p align="center">
+<img width="500" height="300" src="https://user-images.githubusercontent.com/61132761/217617038-91b778cd-12cc-49d3-a24b-f89b5bd2732b.png">    
+</p>
