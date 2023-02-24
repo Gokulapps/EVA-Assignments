@@ -2,7 +2,7 @@
 
 To Create a Custom Resnet Architecture for CIFAR10 Dataset by using a One Cycle Policy with a Batch Size of 512 and 3 Augmentation Strategies to be Implemented
 
-# Main Repository Link
+# Base Repository Link
 
 https://github.com/Gokulapps/Pytorch-Model-Training-Base-Repo
 
