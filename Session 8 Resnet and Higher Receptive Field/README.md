@@ -105,7 +105,7 @@ Test set: Average loss: 0.0032, Accuracy: 8715/10000 (87.15%)
 
 # Validation Loss and Accuracy Curve 
 
-![Validation Curve](https://user-images.githubusercontent.com/61132761/221252238-582670a6-f22a-4f77-bcb4bc2380adecc2.jpg)
+![Validation Curve](https://user-images.githubusercontent.com/61132761/221253309-3b40e6be-f3a3-4a4a-8938-11bf2f8f7f57.jpg)
 
 # Misclassified Images with GradCAM Outputs 
 
@@ -114,6 +114,7 @@ Test set: Average loss: 0.0032, Accuracy: 8715/10000 (87.15%)
 # Parameters Used for One Cycle Policy 
 
 |       Parameter         |      Values Used      |
+|-------------------------|-----------------------|
 |  Maximum Learning Rate  |         0.1834        |
 |    Number of Epochs     |           24          |
 |      Total Steps        |           24          |
