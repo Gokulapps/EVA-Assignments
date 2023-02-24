@@ -113,7 +113,7 @@ Test set: Average loss: 0.0032, Accuracy: 8715/10000 (87.15%)
 
 # Parameters Used for One Cycle Policy 
 
-|       Parameter         |      Values Used      |
+|       Parameter         |         Values        |
 |-------------------------|-----------------------|
 |  Maximum Learning Rate  |         0.1834        |
 |    Number of Epochs     |           24          |
