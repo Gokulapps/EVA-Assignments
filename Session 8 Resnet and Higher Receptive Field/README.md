@@ -105,15 +105,20 @@ Test set: Average loss: 0.0032, Accuracy: 8715/10000 (87.15%)
 
 # Validation Loss and Accuracy Curve 
 
-
+![Validation Curve](https://user-images.githubusercontent.com/61132761/221252238-582670a6-f22a-4f77-bcb4bc2380adecc2.jpg)
 
 # Misclassified Images with GradCAM Outputs 
 
-
+![Misclassified Images](https://user-images.githubusercontent.com/61132761/221252578-56128002-8d3f-4634-bdc3-8da3f23d4a0d.jpg)
 
 # Parameters Used for One Cycle Policy 
 
-
+|       Parameter         |      Values Used      |
+|  Maximum Learning Rate  |         0.1834        |
+|    Number of Epochs     |           24          |
+|      Total Steps        |           24          |
+|       Pct_Start         |          5/24         |
 
 # External Reference 
 
+https://github.com/jacobgil/pytorch-grad-cam
