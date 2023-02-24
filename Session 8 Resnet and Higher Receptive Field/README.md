@@ -1,4 +1,4 @@
-# Session 8 Task 
+# Session 8 Assignment
 
 To Create a Custom Resnet Architecture for CIFAR10 Dataset by using a One Cycle Policy with a Batch Size of 512 and 3 Augmentation Strategies to be Implemented
 
