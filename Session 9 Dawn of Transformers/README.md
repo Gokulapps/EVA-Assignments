@@ -6,6 +6,10 @@ To Build a Basic Tranformer Network Architecture and Train it for 24 Epochs on C
 
 ![image](https://user-images.githubusercontent.com/61132761/222738400-893ce5a8-3abb-4666-aa6a-80d508af8493.png)
 
+# Validation Loss and Validation Accuracy of the Network
+
+![image](https://user-images.githubusercontent.com/61132761/222742272-b909b12b-066e-4f1d-aeaf-a36789e8be81.png)
+
 # Images Misclassified by the Model 
 
 ![image](https://user-images.githubusercontent.com/61132761/222738738-84e1ca1d-fad1-4395-b221-73dd77ff3ab3.png)
