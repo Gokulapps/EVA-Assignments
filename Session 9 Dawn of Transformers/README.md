@@ -18,6 +18,8 @@ language translation, sentiment analysis, and image classification. The Transfor
 architectures, enabling researchers and practitioners to tackle increasingly challenging problems. As the demand for sophisticated machine learning models continues to 
 grow, the Transformer network's relevance will only continue to increase in the modern world.
 
+Below is the Transformer Network Block with encoder and Decoder Block 
+
 ![image](https://user-images.githubusercontent.com/61132761/222740823-2ca841ee-199f-4dee-bcdd-0c90363bc8c7.png)
 
 # External Reference
