@@ -12,11 +12,11 @@ https://github.com/Gokulapps/Pytorch-Model-Training-Base-Repo
 
 # Validation Loss and Validation Accuracy of the Network
 
-![image](https://user-images.githubusercontent.com/61132761/222742272-b909b12b-066e-4f1d-aeaf-a36789e8be81.png)
+![image](https://user-images.githubusercontent.com/61132761/222885344-bfa49d47-ddb8-4265-ae86-aab2b7839204.png)
 
-# Images Misclassified by the Model 
+# Images Misclassified by the Model and its GradCAm Output
 
-![image](https://user-images.githubusercontent.com/61132761/222738738-84e1ca1d-fad1-4395-b221-73dd77ff3ab3.png)
+![image](https://user-images.githubusercontent.com/61132761/222885374-551d6338-ea39-42b8-b18f-37154abc45c9.png)
 
 # Relevance of Transformer Network in Modern World 
 
