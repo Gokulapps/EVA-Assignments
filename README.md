@@ -1,5 +1,5 @@
 # Extensive Vision Application Course 
-This Repo has Asssignments done as part of this EVA Course. Each Directory refers to Assignment related to a particular Session
+This Repo has Asssignments done as part of EVA8 Course. Each Directory refers to Assignment related to a Particular Session
 
 # Tools Used 
 * Google Colab 
