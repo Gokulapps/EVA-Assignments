@@ -4,10 +4,10 @@ This Repo has Asssignments done as part of EVA8 Course. Each Directory refers to
 # Tools Used 
 * Google Colab 
 * Kaggle
-* Pytorch 
-* Opencv
+* PyTorch 
+* OpenCV
 * Matplotlib 
-* Gradcam 
+* GradCAM 
 * Excel 
 
 # External Reference 
